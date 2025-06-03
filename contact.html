@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - INFINITE SEEKER TIMEPIECES</title>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <!--
+    <header>
+        <img src="images/LOGO.jpg" alt="INFINITE SEEKER TIMEPIECES Logo" width="300">
+        <h1><i class="fas fa-envelope"></i> CONTACT INFINITE SEEKER TIMEPIECES</h1>
+    </header>
+    
+    Navigation with icons
+    <nav>
+       <table width="100%" align="center">
+        <tr>
+            <td><a href="home.html"><i class="fas fa-home"></i> Home</a></td>
+            <td><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></td>
+            <td><a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a></td>
+            <td><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></td>
+            <td><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></td>
+        </tr>
+       </table>
+    </nav>
+-->
+    <div class="contact-container">        
+        <section>
+            <h2><i class="fas fa-paper-plane"></i> Send Us a Message</h2>
+            <p class="subtitle">Have questions? We'd love to hear from you!</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name*</label>
+                    <div class="input-container">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    </div>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <div class="input-container">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-container">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="subject">Subject*</label>
+                    <div class="input-container">
+                        <i class="fas fa-tag"></i>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                    </div>
+                    <span class="error-message" id="subjectError"></span>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <div class="input-container">
+                        <i class="fas fa-comment"></i>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message here..."></textarea>
+                    </div>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+ 
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+        </section>
+
+        <!-- Map section -->
+        <section class="visit-us">
+            <h2><i class="fas fa-map-marked-alt"></i> Visit Us</h2>
+            <p><i class="fas fa-store"></i> We welcome you to visit our Boutique and experience our elegant crafts in person.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.9219746595472!2d26.200532499999998!3d-29.107984799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fc530b4110b19%3A0x9b8d00abf7469518!2sMimosa%20Mall%2C%20131%20Kellner%20St%2C%20Brandwag%2C%20Bloemfontein%2C%209301!5e0!3m2!1sen!2sza!4v1742309504817!5m2!1sen!2sza" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+       <!--  Social media links with icons -->
+        <p><i class="fas fa-share-alt"></i> Follow us on:</p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=cf9sxi4GnZY">
+                <i class="fab fa-youtube"></i> YouTube
+            </a> |
+            <a href="https://www.instagram.com/infin.iteseeker/">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </p>
+        
+        <h3><i class="fas fa-comments"></i> Get in Touch</h3>
+        <p>
+            <i class="fas fa-comment-dots"></i> We'd love to hear from you! Whether you have a question about our products, need assistance with an order, or just want to share your experience with us, please feel free to reach out.
+        </p>
+        
+        <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+        <p>
+            <i class="fas fa-phone-alt"></i> <strong>Phone:</strong> (058) 567-2345<br>
+            <i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@infiniteseeker205@gmail.com">info@infiniteseeker205@gmail.com</a><br>
+            <i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 131 Kellner St, Brandwag, Bloemfontein, 9301
+        </p>
+        
+        <p class="copyright"><i class="far fa-copyright"></i> 2025 INFINITE SEEKER TIMEPIECES. All rights reserved.</p>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

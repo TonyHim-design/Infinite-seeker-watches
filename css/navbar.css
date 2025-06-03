@@ -1,0 +1,188 @@
+/* Navbar styles - Infinite Seeker Timepieces */
+.navbar {
+    background-color: #222; /* Matches header/footer background */
+    padding: 15px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px; /* Matches your content width */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-left: 30px;
+    position: relative;
+}
+
+/* Fix: Changed .navbar-link to .navbar-links to match JS and HTML */
+.navbar-links {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 10px 0;
+    position: relative;
+}
+
+.navbar-links:hover {
+    color: #f8d347; /* Brand gold color */
+}
+
+/* Active link indicator */
+.navbar-links::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f8d347; /* Brand gold color */
+    transition: width 0.3s ease;
+}
+
+.navbar-links:hover::after {
+    width: 100%;
+}
+
+/* Mobile menu toggle */
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .navbar-logo {
+        padding: 10px 0;
+    }
+}
+
+/* Dropdown menu styles (if you use any dropdowns) */
+.navbar-dropdown {
+    position: relative;
+}
+
+.navbar-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 200px;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.navbar-dropdown:hover .navbar-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-dropdown-item {
+    padding: 10px 20px;
+}
+
+.navbar-dropdown-link {
+    color: #bbbbbb;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.navbar-dropdown-link:hover {
+    color: #f8d347;
+    padding-left: 10px;
+}
+
+/* Header and title styles */
+.navbar-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.navbar-title i {
+    color: #f8d347;
+    margin-right: 10px;
+}
+
+.navbar-links i {
+    margin-right: 8px;
+}
+
+@media (max-width: 992px) {
+    .navbar-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .navbar-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-title {
+        font-size: 1rem;
+    }
+}
